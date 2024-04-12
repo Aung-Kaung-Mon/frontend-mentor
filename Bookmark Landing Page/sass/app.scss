@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;&display=swap");
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+
+$theme-colors: (
+  "soft-blue": hsl(231, 69%, 60%),
+  "soft-red": hsl(0, 94%, 66%),
+  "soft-gray": rgba(128, 128, 128, 0.155),
+  "gray-blue": hsl(229, 31%, 21%),
+);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 2,
+  5: $spacer * 4,
+  6: $spacer * 6,
+  7: $spacer * 10,
+  8: $spacer * 15,
+);
+
+$font-family-sans-serif: "Rubik", sans-serif;
+$font-weight-bold: 500;
+$font-size-base: 1rem;
+
+$nav-link-color: black;
+$nav-link-hover-color: black;
+$nav-underline-link-active-color: hsl(0, 94%, 66%);
+$nav-link-padding-x: 4rem;
+$nav-link-padding-y: 1rem;
+$navbar-brand-margin-end: 0;
+
+$accordion-icon-width: 1.5rem;
+$accordion-icon-color: hsl(231, 69%, 60%);
+$accordion-padding-x: 1.7rem;
+$accordion-padding-y: 1.4rem;
+$accordion-border-width: 0;
+
+$input-btn-padding-x: 1.3em;
+$input-btn-padding-y: 0.5rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.hero {
+  background-image: url("../bookmark-landing-page-master/images/left-rectangle.svg");
+  background-size: 35%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.features {
+  background-image: url("../bookmark-landing-page-master/images/right-rectangle.svg");
+  background-size: 35%;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+@include media-breakpoint-down(xxl) {
+  .card-font {
+    font-size: 0.9rem;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .features {
+    background-image: none;
+  }
+  .display-heading-fs {
+    font-size: 2rem;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .hero {
+    background-image: none;
+  }
+
+  .display-heading-fs {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .card-font {
+    font-size: 0.9rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .display-heading-fs {
+    font-size: 1.3rem;
+  }
+
+  .btn-font {
+    font-size: 0.8rem;
+  }
+
+  .nav-tab-fs {
+    font-size: 0.7rem;
+  }
+
+  .card-font {
+    font-size: 0.7rem;
+  }
+
+  .card-image {
+    img {
+      width: 40%;
+    }
+  }
+
+  .input-group-fs{
+    font-size: 0.9rem;
+  }
+  
+}

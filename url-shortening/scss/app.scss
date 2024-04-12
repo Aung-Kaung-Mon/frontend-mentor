@@ -1,0 +1,127 @@
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+$theme-colors: (
+  "cyan": hsl(180, 66%, 49%),
+  "d-violet": hsl(257, 27%, 26%),
+  "red": hsl(0, 87%, 67%),
+  "gray": hsla(0, 8%, 95%, 0.167),
+  "white": #eae8e86b,
+);
+
+$spacer: 1.2rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.7,
+  5: $spacer * 2.7,
+  6: $spacer * 6,
+  7: $spacer * 10,
+  8: $spacer * 18,
+);
+
+$font-size-base: 1.1rem;
+
+$navbar-brand-margin-end: 3rem;
+$navbar-nav-link-padding-x: 1rem;
+
+$btn-padding-x: 1.3rem;
+$btn-padding-y: 0.6rem;
+
+$input-padding-x: 1.3rem;
+$input-padding-y: 0.6rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.hero {
+  height: 20rem;
+  background-image: url("../url-shortening-api-master/images/illustration-working.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+
+  @include media-breakpoint-down(lg) {
+    background-position: center;
+  }
+
+  @include media-breakpoint-down(md) {
+    background-position: right;
+  }
+
+  .hero-text {
+    @include media-breakpoint-down(lg) {
+      transform: translateY(20rem);
+    }
+  }
+}
+
+.form-bg {
+  background-image: url("../url-shortening-api-master/images/bg-shorten-desktop.svg");
+  background-color: hsl(257, 27%, 26%);
+}
+
+.image {
+  background-color: hsl(257, 27%, 26%);
+  padding: 1rem;
+  width: 4.7rem;
+  height: 4.9rem;
+  border: 1px solid hsl(257, 27%, 26%);
+  border-radius: 50%;
+
+  @include media-breakpoint-down(md) {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.image {
+  margin-top: -3rem;
+}
+
+.boost {
+  background-color: hsl(257, 27%, 26%);
+  background-image: url("../url-shortening-api-master/images/bg-shorten-desktop.svg");
+}
+
+footer {
+  background-color: hsl(255, 11%, 22%);
+}
+
+ul {
+  list-style-type: none;
+
+  li {
+    margin-bottom: 6px;
+  }
+}
+
+@include media-breakpoint-between(lg, xl) {
+  .card-item > p {
+    font-size: 0.9rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .form-text {
+    font-size: 0.9rem;
+  }
+
+  .form-btn-text {
+    font-size: 0.9em;
+  }
+
+  .advance-text {
+    font-size: 0.82rem;
+  }
+
+  .fs {
+    font-size: 1rem;
+  }
+
+  li {
+    font-size: 0.86rem;
+  }
+}
